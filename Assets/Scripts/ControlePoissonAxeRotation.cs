@@ -23,7 +23,7 @@ public class ControlePoissonAxeRotation : MonoBehaviour
 
 
     void OnBouger(InputValue delta){
-        direction = delta.Get<Vector2>();
+        direction = delta.Get<Vector2>() * 0.1f;
         
     }
     private void FixedUpdate()
