@@ -8,8 +8,17 @@
                 {
                     "name": "Tourner",
                     "type": "Value",
-                    "id": "92c2f5f6-30db-4a5e-abda-47364b276a3b",
+                    "id": "74e88019-2966-4db9-94e5-700563a95724",
                     "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Bouger",
+                    "type": "Value",
+                    "id": "a16ad365-cc4d-47eb-bf0d-42eda6b0cda7",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -17,8 +26,8 @@
             ],
             "bindings": [
                 {
-                    "name": "Angle",
-                    "id": "cf19c207-ad67-4504-9560-b601301100c6",
+                    "name": "1D Axis",
+                    "id": "87cbeba8-39ab-4a22-a759-bf9407a207b8",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -28,9 +37,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "96bf2f37-705c-45a6-bd44-6748c889853a",
-                    "path": "<Keyboard>/a",
+                    "name": "positive",
+                    "id": "7af98e6d-d7d4-4892-87ef-101c5d2cc7c2",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -39,15 +48,26 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "cd110d0a-6915-4868-a140-0fa0a73d1b30",
-                    "path": "<Keyboard>/d",
+                    "name": "negative",
+                    "id": "9a40af82-c47b-4f11-8206-5e98487c4ae0",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Tourner",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "da224db9-d7a9-4465-a5a1-27f59a8e153b",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "souris",
+                    "action": "Bouger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -59,6 +79,17 @@
             "devices": [
                 {
                     "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "souris",
+            "bindingGroup": "souris",
+            "devices": [
+                {
+                    "devicePath": "<Pointer>",
                     "isOptional": false,
                     "isOR": false
                 }

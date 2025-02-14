@@ -1,0 +1,68 @@
+{
+    "name": "ActionBouton",
+    "maps": [
+        {
+            "name": "poisson",
+            "id": "cb26d903-9adf-4001-a8fc-bbbbff3dc59e",
+            "actions": [
+                {
+                    "name": "dash",
+                    "type": "Button",
+                    "id": "a90f2a7a-173a-4246-8fe2-09b3845ad0ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6b52e452-4e62-43ad-a4f3-6846e236591c",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "clavier",
+                    "action": "dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b97a0eae-5915-43b6-97e7-28e0346f61aa",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "clavier",
+                    "action": "dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Clavier",
+            "bindingGroup": "Clavier",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "clavier1",
+            "bindingGroup": "clavier",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
